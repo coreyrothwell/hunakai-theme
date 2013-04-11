@@ -1,0 +1,19 @@
+/*
+** =========================================================
+** OVERALL
+** =========================================================
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  padding: 1em
+}
+.wrapper {
+	max-width: 60em;
+	margin: 0 auto;
+	overflow: hidden;
+}
