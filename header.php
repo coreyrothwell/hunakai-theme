@@ -23,10 +23,18 @@
 			
 		</header>
 
-		<nav class="navigation">
-			<a href="<?php echo get_site_url(); ?>">Home</a>
-			<a href="about-us">About Us</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#blog">Blog</a>
-			<a href="contact-us">Contact Us</a>
-		</nav>
+		<div class="nav-container">
+
+			<div class="nav-button hide">
+				<a href="#">Menu<i class="icon-angle-down"></i></a>
+			</div>
+
+			<nav class="navigation">
+				<a href="<?php echo get_site_url(); ?>">Home</a>
+				<a href="about-us">About Us</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#blog">Blog</a>
+				<a href="contact-us">Contact Us</a>
+			</nav>
+
+		</div>
