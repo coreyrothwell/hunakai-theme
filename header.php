@@ -24,7 +24,7 @@
 		</header>
 
 		<nav class="navigation">
-			<a href="/wordpress/">Home</a>
+			<a href="<?php echo get_site_url(); ?>">Home</a>
 			<a href="about-us">About Us</a>
 			<a href="#portfolio">Portfolio</a>
 			<a href="#blog">Blog</a>

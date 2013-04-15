@@ -3,8 +3,13 @@
 		<div class="main">	
 
 			<section id="home" class="home section">
-				<h1 class="huge">We are the best or whatever.</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, quos, molestias nemo sunt ea doloribus corporis adipisci sed quasi voluptates. Ipsa, facilis, assumenda, ex eligendi quas quam placeat amet alias magnam neque corrupti asperiores hic totam qui sit doloremque dolores iure consectetur magni enim et voluptatem sint provident officia repellat!</p>
+				<?php $home = new WP_Query(array(
+					'pagename' => 'home-quote'
+				)); ?>
+				<?php if($home->have_posts()) : while($home->have_posts()): $home->the_post() ?>
+					<h1 class="huge"><?php the_title(); ?></h1>
+					<p><?php the_content(); ?></p>
+				<?php endwhile; endif; ?>
 			</section>	
 
 			<section class="portfolio section" id="portfolio">
@@ -20,16 +25,6 @@
 						<img src="http://placehold.it/450x200">
 						<h4>Site Title</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, deserunt, eius voluptatum cupiditate dolorem provident laudantium suscipit minima delectus cum atque molestiae!</p>
-					</div>
-					<div class="item">
-						<img src="http://placehold.it/450x200">
-						<h4>Site Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, fugit.</p>
-					</div>
-					<div class="item">
-						<img src="http://placehold.it/450x200">
-						<h4>Site Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, nostrum culpa ipsa soluta iusto officiis esse.</p>
 					</div>
 					<a href="#">Check Out All of our Amazing Projects</a>
 				</div>
