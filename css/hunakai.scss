@@ -67,6 +67,14 @@
 	padding: 2em 1em;
 	@include border_top;
 }
+a {
+	color: $ocean;
+	-webkit-transition: .4s all ease;
+
+	&:hover {
+		color: $ocean-dark;
+	}
+}
 
 
 
@@ -86,15 +94,10 @@
 	font-weight: 700;
 
 	a {
-		-webkit-transition: .4s all ease;
+		text-decoration: none;
 		margin: 0 2em;
 		@include title_font;
-		text-decoration: none;
-		color: $ocean;
 
-		&:hover {
-			color: $ocean-dark;
-		}
 	}
 
 }
